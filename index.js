@@ -35,9 +35,27 @@ function control() {
     var pc=document.getElementById("pc");
     var oyuncu=document.getElementById("oyuncu");
     if(Number(pc.value)==5){
-        yazdir("Oyun bitti ve kazanan Bilgisayar");
+        addDiv("Oyun bitti ve kazanan Bilgisayar");
     }else if(Number(oyuncu.value)==5){
-        yazdir("Oyun bitti ve kazanan Oyuncu");
+        addDiv("Oyun bitti ve kazanan Oyuncu");
     }
 }
+
+
+function addDiv(params) {
+    var btn = document.createElement("DIV"); 
+    btn.innerHTML =params;   
+    var typ = document.createAttribute("class");
+    typ.value = "d-flex bg-info justify-content-center align-items-center text-center rounded-pill text-white mt-3 p-3";
+    btn.attributes.setNamedItem(typ);  
+    
+    var btn1 = document.createElement("BUTTON");
+    btn1.innerHTML ="RESET";
+    var typ1 = document.createAttribute("class");
+    typ1.value = "d-flex bg-info justify-content-center align-items-center text-center rounded-pill text-white mt-3 p-3";
+
+    document.getElementById("a").appendChild(btn);
+    document.getElementById("a").appendChild(btn);
+}
+
 

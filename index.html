@@ -12,43 +12,43 @@
 </head>
 <body>
 
-<div class="jumbotron text-center bg-danger text-white">
-  <h1>Taş Kağıt Makas Oyunu</h1>
+<div class="text-center bg-secondary text-white p-2">
+  <h2>Taş Kağıt Makas Oyunu</h2>
 </div>
   
-<div class="container-fluid bg-light p-5">
+<div class="container-fluid p-5" id="a">
   <div class="d-flex justify-content-center align-items-center text-center">
             <div class="p-2 mr-1 rounded-lg">
               <img src="tas.png" alt="tas" height="90" width="90" class="rounded mb-3" onclick="games('TAŞ')">
             </div>
 
-            <div class="bg-secondary p-2 mr-1 rounded-lg">
+            <div class="p-2 mr-1 rounded-lg">
                 <img src="kagit.png" alt="kagit" height="90" width="90" class="rounded mb-3" onclick="games('KAĞIT')">
             </div>
-            <div class="bg-secondary p-2 mr-1 rounded-lg">
+            <div class="p-2 mr-1 rounded-lg">
                 <img src="makas.png" alt="makas" height="90" width="90" class="rounded mb-3" onclick="games('MAKAS')">
             </div>
   </div>
 <div class="d-flex justify-content-center align-items-center text-center text-white">
-  <div class="bg-secondary p-2 m-1 rounded-lg">
+  <div class="bg-light p-2 m-1 rounded-lg text-dark">
     <h6>OYUNCU</h6>
-    <p id="oyuncu_oyun"></p>
+    <small id="oyuncu_oyun"></small>
   </div>
-  <div class="bg-secondary p-2 m-1 rounded-lg">
-    <p id="sonuc"></p>
+  <div class="bg-light p-2 m-1 rounded-lg text-danger">
+    <small id="sonuc"></small>
   </div>
-  <div class="bg-secondary p-2 m-1 rounded-lg">
+  <div class="bg-light p-2 m-1 rounded-lg text-dark"  >
     <h6>BİLGİSAYAR</h6>
     <p id="pc_oyun"></p>
   </div>
 </div>
   <div class="d-flex justify-content-center align-items-center text-center text-white">
-      <div class="bg-secondary p-3 m-1 rounded-lg">
+      <div class="bg-light p-3 m-1 rounded-lg text-warning">
         <h6>OYUNCU</h6>
         <p>Oyuncu skor</p>
         <input type="button" value="0" id="oyuncu">
       </div>
-      <div class="bg-secondary p-3 m-1 rounded-lg">
+      <div class="bg-light p-3 m-1 rounded-lg text-primary">
           <h6>BİLGİSAYAR</h6>
           <p>Bilgisayar skor</p>
           <input type="button" value="0" id="pc">
