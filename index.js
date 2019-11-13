@@ -52,10 +52,26 @@ function addDiv(params) {
     var btn1 = document.createElement("BUTTON");
     btn1.innerHTML ="RESET";
     var typ1 = document.createAttribute("class");
-    typ1.value = "d-flex bg-info justify-content-center align-items-center text-center rounded-pill text-white mt-3 p-3";
-
+    typ1.value = "btn btn-outline-warning btn-lg btn-block rounded-pill mt-5";
+    var typ2 = document.createAttribute("onclick");
+    typ2.value = "reset()";
+    btn1.attributes.setNamedItem(typ1);
+    btn1.attributes.setNamedItem(typ2);
     document.getElementById("a").appendChild(btn);
-    document.getElementById("a").appendChild(btn);
+    document.getElementById("a").appendChild(btn1);
 }
+function reset() {
+    $(document).ready(function(){
+          $("#a").empty();
+    });
+    document.getElementById("pc").value=0;
+    document.getElementById("oyuncu").value=0;
+    document.getElementById("pc_oyun").innerHTML="";
+    document.getElementById("oyuncu_oyun").innerHTML="";
+    document.getElementById("sonuc").innerHTML="";
+}
+
+
+
 
 
